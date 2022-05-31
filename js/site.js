@@ -1,7 +1,7 @@
 
 if('serviceWorker' in navigator)
 {
-    navigator.serviceWorker.register('../service_worker.js',{scope: '/Food-App/'})
+    navigator.serviceWorker.register('../service_worker.js',{scope: '/'})
     .then((registration) => {
         console.log('Success. Scope:', registration.scope);
         })
@@ -9,5 +9,9 @@ if('serviceWorker' in navigator)
         console.log('Failed. Error:', error);
     });
 
+}
+else
+{
+    console.log('Service worker is not supported')
 }
 

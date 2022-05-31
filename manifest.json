@@ -1,8 +1,8 @@
 {
     "name":"My Progressive web app",
     "short_name":"My PWA",
-    "start_url":"/Food-App/",
-    "id":"/Food-App/",
+    "start_url":"/",
+    "id":"/",
     "description":"My App",
     "display":"standalone",
     "icons":[
