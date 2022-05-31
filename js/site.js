@@ -1,7 +1,7 @@
 
 if('serviceWorker' in navigator)
 {
-    navigator.serviceWorker.register('../service_worker.js',{scope: '/'})
+    navigator.serviceWorker.register('../Hotel-App/service_worker.js',{scope: '/Hotel-App/'})
     .then((registration) => {
         console.log('Success. Scope:', registration.scope);
         })
