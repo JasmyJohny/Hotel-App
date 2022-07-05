@@ -8,8 +8,8 @@
       content="width=device-width, initial-scale=1.0,user-scalable=no"
     />
     <title>Golden Lake Seafood Resaturant</title>
-    <link rel="manifest" href="manifest.json" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="../../manifest.json" />
+    <link rel="stylesheet" href="../add/style.css" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
@@ -49,22 +49,52 @@
       <h2 id="mainHead">Golden Lake Seafood Resaturant</h2>
       <nav class="top-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pages/add/index.html">Add</a></li>
-          <li><a href="pages/list/index.html">List</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/add/index.html">Add</a></li>
+            <li><a href="../list/index.html">List</a></li>
          
         </ul>
       </nav>
     </div>
-    <main>
-      <div class="content">
-        <h2>Welcome</h2>
-        <p>Use this app to keep a list of all your favourites songs and artist.</p>
+<main>
+   <!-- <form > -->
+    <div class="content">
+      <h2>New Song</h2>
 
-       
+      <!-- Add game form -->
+      <div id="game-add-form">
+        <div class="field">
+          <label for="game-title" class="required">Title:</label>
+          <input id="game-title" type="text" maxlength="50" required />
+        </div>
+
+        <div class="field">
+          <label for="game-genre" class="required">Artist:</label>
+          <input id="game-genre" type="text" maxlength="50" required/>
+          
+        </div>
+
+       <h5 id="mandatoryField" style="display: none;">Please Fill required fields</h5>
+
+        <button id="add-game-btn">Add</button>
       </div>
-    </main>
-    <script src="js/site.js"></script>
-   
+     
+
+      <!-- Success Message -->
+      <div id="game-add-success">
+        Game added successfully!
+      </div>
+
+      <!-- Failure Message -->
+      <div id="game-add-failed">
+        Failed to add game!
+      </div>
+    </div>
+    <!-- </form> -->
+  </main>
+  <!-- <script src="../../js/game-db.js"></script> -->
+  <script src="../add/script.js" type="module"></script>
+ 
   </body>
-</html>
+  </html>
+

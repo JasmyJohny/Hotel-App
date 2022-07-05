@@ -8,8 +8,8 @@
       content="width=device-width, initial-scale=1.0,user-scalable=no"
     />
     <title>Golden Lake Seafood Resaturant</title>
-    <link rel="manifest" href="manifest.json" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="../../manifest.json" />
+    <link rel="stylesheet" href="../list/style.css" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
@@ -49,22 +49,46 @@
       <h2 id="mainHead">Golden Lake Seafood Resaturant</h2>
       <nav class="top-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pages/add/index.html">Add</a></li>
-          <li><a href="pages/list/index.html">List</a></li>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../add/index.html">Add</a></li>
+            <li><a href="pages/list/index.html">List</a></li>
          
         </ul>
       </nav>
     </div>
-    <main>
-      <div class="content">
-        <h2>Welcome</h2>
-        <p>Use this app to keep a list of all your favourites songs and artist.</p>
+<main>
+    <div class="content">
+      <h2>List Games</h2>
 
-       
+      <!-- Filter -->
+      <div class="game-filter">
+        <!-- <label for="game-genre">Filter:</label>
+        <select id="game-genre">
+          <option value="">- All Games -</option>
+          <option value="Action">Action</option>
+          <option value="Puzzle">Puzzle</option>
+          <option value="Adventure">Adventure</option>
+        </select> -->
+        <button id="listitemBtn">List</button>
       </div>
-    </main>
-    <script src="js/site.js"></script>
-   
+
+      <!-- Listing -->
+      <div id="output"></div>
+
+      <div class="game-item">
+        <!-- <span>Game Genre</span>
+        <h3>Title of the Game</h3>
+        <div>
+          <b>Status:</b>
+          Still playing
+        </div>
+        <button>Change Status</button>
+        <button>Remove Game</button> -->
+      </div>
+
+    </div>
+  </main>
+  <!-- <script src="../../js/game-db.js"></script> -->
+  <script src="../list/script.js" type="module"></script>
   </body>
-</html>
+  </html>
